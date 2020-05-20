@@ -1,0 +1,13 @@
+gc_command:
+    resource: "@GCCommandBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+gr_restaurant:
+    resource: "@GRRestaurantBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
