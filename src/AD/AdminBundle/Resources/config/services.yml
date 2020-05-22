@@ -1,0 +1,4 @@
+services:
+#    ad_admin.example:
+#        class: AD\AdminBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

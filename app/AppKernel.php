@@ -19,6 +19,7 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new GR\RestaurantBundle\GRRestaurantBundle(),
             new GC\CommandBundle\GCCommandBundle(),
+            new AD\AdminBundle\ADAdminBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
