@@ -390,7 +390,7 @@ a:focus {
 }
 
 #navbar {
-  background: #222328;
+  background: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
@@ -401,7 +401,7 @@ a:focus {
 #navbar .nav-link {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: black;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: .5px;
@@ -411,12 +411,10 @@ a:focus {
 
 #navbar .nav-link:hover, #navbar .nav-link:focus {
   color: #f75757;
+  font-weight: 700;
 }
 
-#navbar .btn {
-  padding: .5rem 1.5rem;
-  color: #fff;
-}
+
 
 .header-top {
   background: #222328;
@@ -426,13 +424,13 @@ a:focus {
 
 .header-top .header-top-socials {
   border-right: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 12px 0px;
+  padding: 5px 0px;
 }
 
 .header-top .header-top-socials a {
-  color: #919194;
+  color: white;
   margin-right: 15px;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .header-top .header-top-info {
@@ -1432,5 +1430,43 @@ h3.quote::before {
     text-align: center;
   }
 }
+.elementor-heading-title {
+  color: #DC242F;
+  font-family: "Grand Hotel", sans-serif;
+  font-size: 24px;
+}
+#block-carousel
+{
+
+}
+
+
+.top-restaurants-wrapper {
+  float: left;
+  width: 100%;
+}
+.restaurants-wrapper.style2 > li {
+  width: 16.667%;
+  padding: 0 8px;
+}
+.restaurants-wrapper.style2 > li:before {
+  content: "";
+  height: 52px;
+  width: 52px;
+  background-color: #fff;
+  position: absolute;
+  right: -25px;
+  top: 37px;
+  z-index: -1;
+}
+.restaurants-wrapper.style2 > li:last-child:before {display: none;}
+/*===== Popular Restaurants Sec Style 2 =====*/
+
+.popular-dish-box.style2 .popular-dish-info {
+  -webkit-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
+}
+
+
 
 /*# sourceMappingURL=maps/style.css.map */

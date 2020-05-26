@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <title>Livrado | mali</title>
+    <title>Food Ordering HTML Template</title>
     <link rel="shortcut icon" href="{{ asset('front/images/favicon.png')}}" type="image/x-icon">
 
     <link rel="stylesheet" href="{{ asset('front/css/icons.min.css') }}">
@@ -40,19 +41,31 @@
     <header class="stick">
         <div class="topbar">
             <div class="container">
+                <div class="select-wrp">
+                    <select data-placeholder="Feel Like Eating">
+                        <option>FEEL LIKE EATING</option>
+                        <option>Burger</option>
+                        <option>Pizza</option>
+                        <option>Fried Rice</option>
+                        <option>Chicken Shots</option>
+                    </select>
+                </div>
+                <div class="select-wrp">
+                    <select data-placeholder="Choose Location">
+                        <option>CHOOSE LOCATION</option>
+                        <option>New york</option>
+                        <option>Washington</option>
+                        <option>Chicago</option>
+                        <option>Los Angeles</option>
+                    </select>
+                </div>
+                <div class="topbar-register">
+                    <a class="log-popup-btn" href="#" title="Login" itemprop="url">LOGIN</a> / <a class="sign-popup-btn" href="#" title="Register" itemprop="url">REGISTER</a>
+                </div>
                 <div class="social1">
                     <a href="#" title="Facebook" itemprop="url" target="_blank"><i class="fa fa-facebook-square"></i></a>
                     <a href="#" title="Twitter" itemprop="url" target="_blank"><i class="fa fa-twitter"></i></a>
                     <a href="#" title="Google Plus" itemprop="url" target="_blank"><i class="fa fa-google-plus"></i></a>
-                </div>
-
-                <!--div class="topbar-register">
-                    <a class="log-popup-btn" href="#" title="Login" itemprop="url">LOGIN</a> / <a class="sign-popup-btn" href="#" title="Register" itemprop="url">REGISTER</a>
-                </div-->
-                <div class="phone-number">
-                    <i class="fa fa-phone"></i> +223 67 11 90 90
-                    &nbsp;&nbsp;<i class="fa fa-mobile-phone"></i> +223 74 94 94 45
-                    &nbsp;&nbsp;<i class="fa fa-envelope"></i> livrado@livrado-mali.com
                 </div>
             </div>
         </div><!-- Topbar -->
@@ -61,20 +74,73 @@
                 <div class="logo">
                     <h1 itemprop="headline">
                         <a href="index.html" title="Home" itemprop="url">
-                            <img src="{{ asset('img/logo_livrado.jpg') }}" alt="logo.png" itemprop="image" width="60" height="60">
+                            <img src="{{ asset('front/images/logo2.png')}}" alt="logo.png" itemprop="image">
                         </a>
                     </h1>
                 </div>
                 <nav>
                     <div class="menu-sec">
                         <ul>
-                            <li class="menu-item-has-children"><a href="#" title="HOMEPAGES" itemprop="url">ACCUEIL</a>
-
-                            </li>
-                            <li class="menu-item-has-children"><a href="#" title="RESTAURANTS" itemprop="url">A propos</a>
-                            </li>
-                            <li class="menu-item-has-children"><a href="#" title="PAGES" itemprop="url">Restaurants Agrées</a>
+                            <li class="menu-item-has-children"><a href="#" title="HOMEPAGES" itemprop="url"><span class="red-clr">FOOD ORDERING</span>HOMEPAGES</a>
                                 <ul class="sub-dropdown">
+                                    <li><a href="index.html" title="HOMEPAGE 1" itemprop="url">HOMEPAGE 1</a></li>
+                                    <li><a href="index2.html" title="HOMEPAGE 2" itemprop="url">HOMEPAGE 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="#" title="RESTAURANTS" itemprop="url"><span class="red-clr">REAL FOOD</span>RESTAURANTS</a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="restaurant-found.html" title="RESTAURANT 1" itemprop="url">RESTAURANT 1</a></li>
+                                    <li><a href="restaurant-found2.html" title="RESTAURANT 2" itemprop="url">RESTAURANT 2</a></li>
+                                    <li><a href="restaurant-detail.html" title="RESTAURANT DETAILS" itemprop="url">RESTAURANT DETAILS</a></li>
+                                    <li><a href="food-recipes.html" title="RESTAURANT DETAILS" itemprop="url">FOOD RECIPES</a></li>
+                                    <li><a href="our-articles.html" title="RESTAURANT DETAILS" itemprop="url">OUR ARTICLES</a></li>
+                                    <li><a href="our-menu.html" title="RESTAURANT DETAILS" itemprop="url">OUR MENU</a></li>
+                                    <li><a href="our-services.html" title="RESTAURANT DETAILS" itemprop="url">OUR SERVICES</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="#" title="PAGES" itemprop="url"><span class="red-clr">REAL FOOD</span>PAGES</a>
+                                <ul class="sub-dropdown">
+                                    <li class="menu-item-has-children"><a href="#" title="BLOG" itemprop="url">BLOG</a>
+                                        <ul class="sub-dropdown">
+                                            <li class="menu-item-has-children"><a href="#" title="BLOG LAYOUTS" itemprop="url">BLOG LAYOUTS</a>
+                                                <ul class="sub-dropdown">
+                                                    <li><a href="blog-right-sidebar.html" title="BLOG WITH RIGHT SIDEBAR" itemprop="url">BLOG (W.R.S)</a></li>
+                                                    <li><a href="blog-left-sidebar.html" title="BLOG WITH LEFT SIDEBAR" itemprop="url">BLOG (W.L.S)</a></li>
+                                                    <li><a href="blog.html" title="BLOG WITH NO SIDEBAR" itemprop="url">BLOG</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="#" title="BLOG DETAIL" itemprop="url">BLOG DETAIL</a>
+                                                <ul class="sub-dropdown">
+                                                    <li><a href="blog-detail-right-sidebar.html" title="BLOG DETAIL WITH RIGHT SIDEBAR" itemprop="url">BLOG DETAIL (W.R.S)</a></li>
+                                                    <li><a href="blog-detail-left-sidebar.html" title="BLOG DETAIL WITH LEFT SIDEBAR" itemprop="url">BLOG DETAIL (W.L.S)</a></li>
+                                                    <li><a href="blog-detail.html" title="BLOG DETAIL WITH NO SIDEBAR" itemprop="url">BLOG DETAIL</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="#" title="BLOG FORMATES" itemprop="url">BLOG FORMATES</a>
+                                                <ul class="sub-dropdown">
+                                                    <li><a href="blog-detail-video.html" title="BLOG DETAIL WITH VIDEO" itemprop="url">BLOG DETAIL (VIDEO)</a></li>
+                                                    <li><a href="blog-detail-audio.html" title="BLOG DETAIL WITH AUDIO" itemprop="url">BLOG DETAIL (AUDIO)</a></li>
+                                                    <li><a href="blog-detail-carousel.html" title="BLOG DETAIL WITH CAROUSEL" itemprop="url">BLOG DETAIL (CAROUSEL)</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#" title="SPECIAL PAGES" itemprop="url">SPECIAL PAGES</a>
+                                        <ul class="sub-dropdown">
+                                            <li><a href="404.html" title="404 ERROR" itemprop="url">404 ERROR</a></li>
+                                            <li><a href="search-found.html" title="SEARCH FOUND" itemprop="url">SEARCH FOUND</a></li>
+                                            <li><a href="search-not-found.html" title="SEARCH NOT FOUND" itemprop="url">SEARCH NOT FOUND</a></li>
+                                            <li><a href="coming-soon.html" title="COMING SOON" itemprop="url">COMING SOON</a></li>
+                                            <li><a href="login-register.html" title="LOGIN & REGISTER" itemprop="url">LOGIN & REGISTER</a></li>
+                                            <li><a href="price-table.html" title="PRICE TABLE" itemprop="url">PRICE TABLE</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children"><a href="#" title="GALLERY" itemprop="url">GALLERY</a>
+                                        <ul class="sub-dropdown">
+                                            <li><a href="gallery.html" title="FOOD GALLERY" itemprop="url">FOOD GALLERY</a></li>
+                                            <li><a href="gallery-detail.html" title="GALLERY DETAIL" itemprop="url">GALLERY DETAIL</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="register-reservation.html" title="REGISTER RESERVATION" itemprop="url">REGISTER RESERVATION</a></li>
                                     <li><a href="how-it-works.html" title="HOW IT WORKS" itemprop="url">HOW IT WORKS</a></li>
                                     <li><a href="dashboard.html" title="USER PROFILE" itemprop="url">USER PROFILE</a></li>
@@ -82,10 +148,9 @@
                                     <li><a href="food-detail.html" title="FOOD DETAIL" itemprop="url">FOOD DETAIL</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html" title="CONTACT US" itemprop="url">Contactez-nous</a></li>
-                            <li><a href="contact.html" title="CONTACT US" itemprop="url">Mon compte</a></li>
+                            <li><a href="contact.html" title="CONTACT US" itemprop="url"><span class="red-clr">REAL FOOD</span>CONTACT US</a></li>
                         </ul>
-                        <!--a class="red-bg brd-rd4" href="register-reservation.html" title="Register" itemprop="url">REGISTER RESTAURANT</a-->
+                        <a class="red-bg brd-rd4" href="register-reservation.html" title="Register" itemprop="url">REGISTER RESTAURANT</a>
                     </div>
                 </nav><!-- Navigation -->
             </div>
@@ -217,8 +282,59 @@
             <div style="background-image: url(front/images/topbg.jpg);" class="fixed-bg"></div>
             <div class="restaurant-searching text-center">
                 <div class="restaurant-searching-inner">
-                    <h2 itemprop="headline">Commander <span> la nourriture en ligne</span> Les meilleurs Restaurants</h2>
-
+                    <h2 itemprop="headline">Order <span>Food Online From</span> the Best Restaurants</h2>
+                    <form class="restaurant-search-form brd-rd2">
+                        <div class="row mrg10">
+                            <div class="col-md-6 col-sm-5 col-lg-5 col-xs-12">
+                                <div class="input-field brd-rd2"><input class="brd-rd2" type="text" placeholder="Restaurant Name"></div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-lg-4 col-xs-12">
+                                <div class="input-field brd-rd2"><i class="fa fa-map-marker"></i><input class="brd-rd2" type="text" placeholder="Search Location"><i class="fa fa-location-arrow"></i></div>
+                            </div>
+                            <div class="col-md-2 col-sm-3 col-lg-3 col-xs-12">
+                                <button class="brd-rd2 red-bg" type="submit">SEARCH</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="funfacts">
+                        <div class="col-md-3 col-sm-6 col-lg-3">
+                            <div class="fact-box">
+                                <i class="brd-rd50">
+                                    <img src="{{ asset('front/images/resource/fact-icon1.png')}}" alt="fact-icon1" itemprop="image"></i>
+                                <div class="fact-inner">
+                                    <strong><span class="counter">137</span></strong>
+                                    <h5>Restaurant</h5>
+                                </div>
+                            </div><!-- Fact Box -->
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-lg-3">
+                            <div class="fact-box">
+                                <i class="brd-rd50"><img src="{{ asset('front/images/resource/fact-icon2.png')}}" alt="fact-icon2" itemprop="image"></i>
+                                <div class="fact-inner">
+                                    <strong><span class="counter">158</span></strong>
+                                    <h5>People Served</h5>
+                                </div>
+                            </div><!-- Fact Box -->
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-lg-3">
+                            <div class="fact-box">
+                                <i class="brd-rd50"><img src="{{ asset('front/images/resource/fact-icon3.png')}}" alt="fact-icon3" itemprop="image"></i>
+                                <div class="fact-inner">
+                                    <strong><span class="counter">659</span>K</strong>
+                                    <h5>Happy Service</h5>
+                                </div>
+                            </div><!-- Fact Box -->
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-lg-3">
+                            <div class="fact-box">
+                                <i class="brd-rd50"><img src="{{ asset('front/images/resource/fact-icon4.png')}}" alt="fact-icon4" itemprop="image"></i>
+                                <div class="fact-inner">
+                                    <strong><span class="counter">235</span></strong>
+                                    <h5>Regular users</h5>
+                                </div>
+                            </div><!-- Fact Box -->
+                        </div>
+                    </div><!-- Fun Facts -->
                 </div>
                 <img class="left-scooty-mockup" src="{{ asset('front/images/resource/restaurant-mockup1.png')}}" alt="restaurant-mockup1.png" itemprop="image">
                 <img class="bottom-clouds-mockup" src="{{ asset('front/images/resource/clouds.png')}}" alt="clouds.png" itemprop="image">
@@ -233,18 +349,19 @@
                     <div class="col-md-12 col-sm-12 col-lg-12">
                         <div class="title1-wrapper text-center">
                             <div class="title1-inner">
-                                <span>Venez découvrir nos meilleurs plats de la cuisine de classe mondiale !</span>
-                                <h2 itemprop="headline">NOS RESTAURANTS</h2>
+                                <span>Website for Restaurant and Cafe</span>
+                                <h2 itemprop="headline">Top Restaurants</h2>
+                                <p itemprop="description">Things that get tricky are things like burgers and fries, or things that are deep-fried. We do have a couple of burger restaurants that are capable of doing a good job transporting but it's  Fries are almost impossible.</p>
                             </div>
                         </div>
                         <div class="top-restaurants-wrapper">
                             <ul class="restaurants-wrapper style2">
-                                <li class="wow bounceIn" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="{{ asset('front/images/resource/rest-amadine.jpg')}}" alt="top-restaurant1.png" itemprop="image"></a></div></li>
-                                <li class="wow bounceIn" data-wow-delay="0.4s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 2" itemprop="url"><img src="{{ asset('front/images/resource/logo-broadway-cafe.jpg')}}" alt="top-restaurant2.png" itemprop="image"></a></div></li>
-                                <li class="wow bounceIn" data-wow-delay="0.6s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 3" itemprop="url"><img src="{{ asset('front/images/resource/logo-brioche-mali.png')}}" alt="top-restaurant3.png" itemprop="image"></a></div></li>
-                                <li class="wow bounceIn" data-wow-delay="0.8s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 4" itemprop="url"><img src="{{ asset('front/images/resource/logo-guido.gif')}}" alt="top-restaurant4.png" itemprop="image"></a></div></li>
-                                <li class="wow bounceIn" data-wow-delay="1s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 5" itemprop="url"><img src="{{ asset('front/images/resource/logo-sigma.jpg')}}" alt="top-restaurant5.png" itemprop="image"></a></div></li>
-                                <li class="wow bounceIn" data-wow-delay="1s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 5" itemprop="url"><img src="{{ asset('front/images/resource/logo-sigma.jpg')}}" alt="top-restaurant5.png" itemprop="image"></a></div></li>
+                                <li class="wow bounceIn" data-wow-delay="0.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 1" itemprop="url"><img src="{{ asset('front/images/resource/top-restaurant1.png')}}" alt="top-restaurant1.png" itemprop="image"></a></div></li>
+                                <li class="wow bounceIn" data-wow-delay="0.4s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 2" itemprop="url"><img src="{{ asset('front/images/resource/top-restaurant2.png')}}" alt="top-restaurant2.png" itemprop="image"></a></div></li>
+                                <li class="wow bounceIn" data-wow-delay="0.6s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 3" itemprop="url"><img src="{{ asset('front/images/resource/top-restaurant3.png')}}" alt="top-restaurant3.png" itemprop="image"></a></div></li>
+                                <li class="wow bounceIn" data-wow-delay="0.8s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 4" itemprop="url"><img src="{{ asset('front/images/resource/top-restaurant4.png')}}" alt="top-restaurant4.png" itemprop="image"></a></div></li>
+                                <li class="wow bounceIn" data-wow-delay="1s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 5" itemprop="url"><img src="{{ asset('front/images/resource/top-restaurant5.png')}}" alt="top-restaurant5.png" itemprop="image"></a></div></li>
+                                <li class="wow bounceIn" data-wow-delay="1.2s"><div class="top-restaurant"><a class="brd-rd50" href="#" title="Restaurant 5" itemprop="url"><img src="{{ asset('front/images/resource/top-restaurant6.png')}}" alt="top-restaurant6.png" itemprop="image"></a></div></li>
                             </ul>
                         </div>
                     </div>
@@ -260,12 +377,12 @@
                     <div class="col-md-12 col-sm-12 col-lg-12">
                         <div class="title1-wrapper text-center">
                             <div class="title1-inner">
-                                <span>Savoureux, délicieux plats</span>
-                                <h2 itemprop="headline">NOS MENUS</h2>
+                                <span>Your Favourite Food</span>
+                                <h2 itemprop="headline">Choose & Enjoy</h2>
                             </div>
                         </div>
                         <div class="row remove-ext5">
-                            <div class="col-md-3 col-sm-6 col-lg-3">
+                            <div class="col-md-4 col-sm-6 col-lg-4">
                                 <div class="popular-dish-box wow fadeIn" data-wow-delay="0.2s">
                                     <div class="popular-dish-thumb">
                                         <a href="food-detail.html" title="" itemprop="url"><img src="{{ asset('front/images/resource/popular-dish-img1.jpg')}}" alt="popular-dish-img1.jpg" itemprop="image"></a>
@@ -281,6 +398,53 @@
                                         <a class="brd-rd2" href="food-detail.html" title="Order Now" itemprop="url">Order Now</a>
                                         <div class="restaurant-info">
                                             <img src="{{ asset('front/images/resource/restaurant-logo1.png')}}" alt="restaurant-logo1.png" itemprop="image">
+                                            <div class="restaurant-info-inner">
+                                                <h6 itemprop="headline"><a href="restaurant-detail.html" title="" itemprop="url">Fabio al Porto Ristorante</a></h6>
+                                                <span class="red-clr">5th Avenue New York 68</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- Popular Dish Box -->
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-lg-4">
+                                <div class="popular-dish-box wow fadeIn" data-wow-delay="0.4s">
+                                    <div class="popular-dish-thumb">
+                                        <a href="food-detail.html" title="" itemprop="url"><img src="{{ asset('front/images/resource/popular-dish-img2.jpg')}}" alt="popular-dish-img2.jpg" itemprop="image"></a>
+                                        <span class="post-rate yellow-bg brd-rd2"><i class="fa fa-star-o"></i> 3.25</span>
+                                        <span class="post-likes brd-rd4"><i class="fa fa-heart-o"></i> 10</span>
+                                    </div>
+                                    <div class="popular-dish-info">
+                                        <h4 itemprop="headline"><a href="food-detail.html" title="" itemprop="url">
+                                                Champignon somen Noodles</a>
+                                        </h4>
+                                        <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <span class="price">$70.00</span>
+                                        <a class="brd-rd2" href="food-detail.html" title="Order Now" itemprop="url">Order Now</a>
+                                        <div class="restaurant-info">
+                                            <img src="{{ asset('front/images/resource/restaurant-logo1.png')}}" alt="restaurant-logo2.png" itemprop="image">
+                                            <div class="restaurant-info-inner">
+                                                <h6 itemprop="headline"><a href="restaurant-detail.html" title="" itemprop="url">Fabio al Porto Ristorante</a></h6>
+                                                <span class="red-clr">5th Avenue New York 68</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- Popular Dish Box -->
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-lg-4">
+                                <div class="popular-dish-box wow fadeIn" data-wow-delay="0.6s">
+                                    <div class="popular-dish-thumb">
+                                        <a href="food-detail.html" title="" itemprop="url"><img src="{{ asset('front/images/resource/popular-dish-img3.jpg')}}" alt="popular-dish-img3.jpg" itemprop="image"></a>
+                                        <span class="post-rate yellow-bg brd-rd2"><i class="fa fa-star-o"></i> 5.00</span>
+                                        <span class="post-likes brd-rd4"><i class="fa fa-heart-o"></i> 15</span>
+                                    </div>
+                                    <div class="popular-dish-info">
+                                        <h4 itemprop="headline"><a href="food-detail.html" title="" itemprop="url">
+                                                Tomatoes & Clams Pasta</a></h4>
+                                        <p itemprop="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                                        <span class="price">$99.00</span>
+                                        <a class="brd-rd2" href="food-detail.html" title="Order Now" itemprop="url">Order Now</a>
+                                        <div class="restaurant-info">
+                                            <img src="{{ asset('front/images/resource/restaurant-logo1.png')}}" alt="restaurant-logo3.png" itemprop="image">
                                             <div class="restaurant-info-inner">
                                                 <h6 itemprop="headline"><a href="restaurant-detail.html" title="" itemprop="url">Fabio al Porto Ristorante</a></h6>
                                                 <span class="red-clr">5th Avenue New York 68</span>
@@ -443,7 +607,7 @@
                     <div class="col-md-12 col-sm-12 col-lg-12">
                         <div class="title1-wrapper text-center">
                             <div class="title1-inner">
-                                <span>Venez découvrir nos meilleurs plats de la cuisine de classe mondiale !</span>
+                                <span>Website for Restaurant and Cafe</span>
                                 <h2 class="text-white" itemprop="headline">easy order in 3 steps</h2>
                             </div>
                         </div>
